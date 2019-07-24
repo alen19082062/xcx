@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/video/video",
+    "pages/dev/dev",
+    "pages/scene/scene",
+    "pages/index/index",
+    "pages/find/find",
+    "pages/me/me"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarTextStyle": "black",
+    "navigationBarBackgroundColor": "#F0F4F3",
+    "navigationBarTitleText": "",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#656565",
+    "selectedColor": "#f3302e",
+    "backgroundColor": "#FBFBFB",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/video/video",
+        "text": "视频",
+        "iconPath": "images/tab_video.png",
+        "selectedIconPath": "images/tab_video_selected.png"
+      },
+      {
+        "pagePath": "pages/dev/dev",
+        "text": "设备",
+        "iconPath": "images/tab_dev.png",
+        "selectedIconPath": "images/tab_dev_selected.png"
+      },
+      {
+        "pagePath": "pages/scene/scene",
+        "text": "场景",
+        "iconPath": "images/notice.png",
+        "selectedIconPath": "images/notice_selected.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我的",
+        "iconPath": "images/profile.png",
+        "selectedIconPath": "images/profile_selected.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

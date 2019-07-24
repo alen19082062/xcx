@@ -1,0 +1,71 @@
+
+<!--pages/video/video.wxml-->
+<view class="mainContainer">
+
+<!--
+<scroll-view scroll-x="true" class="headView"  
+	wx:for="{{chl_groups}}" id="{{index}}" >
+  <view class="headBar" id="{{index}}">
+         {{chl_groups[index][0]}}  
+  </view>
+</scroll-view>
+-->
+
+<scroll-view scroll-x="true" class="headView" >
+  	<view class="headTitle {{currentTab==0 ? 'on' : ''}}" id="0" bindtap="click_cate" >精选</view>
+ 	<view class="headTitle {{currentTab==1 ? 'on' : ''}}" id="1" bindtap="click_cate" >电影</view>
+ 	<view class="headTitle {{currentTab==2 ? 'on' : ''}}" id="2" bindtap="click_cate" >电视剧</view>
+ 	<view class="headTitle {{currentTab==3 ? 'on' : ''}}" id="3" bindtap="click_cate" >动漫</view>
+ 	<view class="headTitle {{currentTab==4 ? 'on' : ''}}" id="4" bindtap="click_cate" >综艺</view>
+ 	<view class="headTitle {{currentTab==5 ? 'on' : ''}}" id="5" bindtap="click_cate" >好莱坞</view>
+ 	<view class="headTitle {{currentTab==6 ? 'on' : ''}}" id="6" bindtap="click_cate" >少儿</view>
+ 	<view class="headTitle {{currentTab==7 ? 'on' : ''}}" id="7" bindtap="click_cate" >音乐</view>
+	<view class="headTitle {{currentTab==8 ? 'on' : ''}}" id="8" bindtap="click_cate" >超清专区</view>
+</scroll-view>
+
+	<view class="lotteryArea">
+	 
+		<view bindtap="click_event" class="list" 
+		     wx:for="{{video_groups}}" id="{{index}}" >
+ 
+		<view class="big"  id="{{index*5+0}}" >		   
+		    <image class="bigImage" src="{{video_groups[index][0].big_img}}"/>
+			<image class="TV" bindtap="click_video" id="{{index*5+0}}" src="../../images/video/video_play_normal.png" />			 
+			<text class="mark">{{video_groups[index][0].mark}}</text>
+			<view class="title"> {{video_groups[index][0].title}}</view>			
+		</view>
+
+		<view class="small" > 
+			<view class="smallCell"  id="{{index*5+1}}" >
+				<image class="smallImage" src="{{video_groups[index][1].small_img}}"/>
+				<view class="smallMark">{{video_groups[index][1].mark}}</view>
+				<image class="smallTV"  bindtap="click_video" id="{{index*5+1}}"  src="../../images/video/video_play_normal.png" />
+				<view class="smallTitle"> {{video_groups[index][1].title}}</view>			
+			</view>
+        	<view class="smallCell"  id="{{index*5+2}}" >
+				<image class="smallImage" src="{{video_groups[index][2].small_img}}"/>
+				<view class="smallMark">{{video_groups[index][2].mark}}</view>
+				<image class="smallTV" bindtap="click_video" id="{{index*5+2}}"  src="../../images/video/video_play_normal.png" />			 
+				<view class="smallTitle"> {{video_groups[index][2].title}}</view>			
+			</view>
+		</view>
+
+		<view class="small"> 
+			<view class="smallCell" id="{{index*5+3}}">
+				<image class="smallImage" src="{{video_groups[index][3].small_img}}"/>
+				<view class="smallMark">{{video_groups[index][3].mark}}</view>
+				<image class="smallTV"  bindtap="click_video" id="{{index*5+3}}"  src="../../images/video/video_play_normal.png" />
+				<view class="smallTitle"> {{video_groups[index][3].title}}</view>			
+			</view>
+        	<view class="smallCell"  id="{{index*5+4}}" >
+				<image class="smallImage" src="{{video_groups[index][4].small_img}}"/>
+				<view class="smallMark">{{video_groups[index][4].mark}}</view>
+				<image class="smallTV"  bindtap="click_video" id="{{index*5+4}}"  src="../../images/video/video_play_normal.png" />			 
+				<view class="smallTitle"> {{video_groups[index][4].title}}</view>			
+			</view>
+		</view>
+	</view>
+   
+	</view>
+
+</view>    

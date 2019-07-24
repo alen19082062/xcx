@@ -1,0 +1,18 @@
+<view class="mainContainer">
+
+	<view class="lotteryheader"></view>
+	<view class="leftToRight">
+		<view class="btn"></view>
+		<view class="content"> {{header}}</view>
+	</view>
+
+	<view class="lotteryArea">
+		<view bindtap="click_event" class="list" 
+		     wx:for="{{ctl_devices}}" id="{{index}}" >
+			<image class="image" src="{{ctl_devices[index].img}}"></image>
+			<view class="title"> {{ctl_devices[index].name}}</view>
+			<view class="subtitle">{{ctl_devices[index].locate}}</view>
+		</view>
+	</view>
+
+</view>

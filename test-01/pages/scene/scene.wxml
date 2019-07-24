@@ -1,0 +1,39 @@
+<view class="mainContainer">
+
+	<view class="lotteryheader"></view>
+
+   <!-- 安防 -->
+	<view class="leftToRight">
+		<view class="btn"></view>
+		<view class="content"> {{security_header}}</view>
+	</view>
+
+	<view class="lotteryArea">
+		<view bindtap="click_security" class="list"  >
+			<image class="image" src="{{security_scene.img}}"></image>
+			<view class="title"> {{security_scene.scene_name}}</view>
+			<!--
+			<view class="subtitle" >{{security_scene.scene_id}}</view>
+			-->
+		</view>
+	</view>
+
+   <!-- 普通场景 -->
+	<view class="leftToRight">
+		<view class="btn"></view>
+		<view class="content"> {{normal_header}}</view>
+	</view>
+
+	<view class="lotteryArea">
+		<view bindtap="click_scene" class="list" 
+		     wx:for="{{normals}}" id="{{index}}" >
+			<image class="image" src="{{normals[index].img}}"></image>
+			<view class="title"> {{normals[index].scene_name}}</view>
+			<!--
+			<view class="subtitle" >{{normals[index].scene_id}}</view>
+			-->
+		</view>
+	</view>
+
+
+</view>

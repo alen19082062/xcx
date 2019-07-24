@@ -1,0 +1,58 @@
+/* pages/more/more.wxss */
+
+.mainContainer {
+	font-family:-apple-system-font,Helvetica Neue,Helvetica,sans-serif;
+	flex:1;
+	min-height:100%;
+	font-size:32rpx;
+}
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 100px;
+}
+
+.bind_info {
+	margin-top: 10px;
+  	display: flex;
+	text-align:right;
+	width: 100%; 
+	height: 20px; 
+	line-height:25px;
+}
+
+.input_label {
+  	width:30%;
+  	text-align:right; 
+}
+
+.input {
+	margin-left: 40px;
+	width:70%;
+  	text-align:left;
+	margin-bottom: 2px;
+	vertical-align:middle;
+	display:inline-block;
+}
+
+.input_btn {
+  	width:70px;
+  	height:40px;
+}
+

@@ -1,0 +1,129 @@
+/* pages/video/video.wxss */
+
+.mainContainer {
+	background-color:#f2f2f2;
+	font-family:-apple-system-font,Helvetica Neue,Helvetica,sans-serif;
+	flex:1;
+	min-height:100%;
+	font-size:32rpx;
+}
+
+.headView {
+    white-space: nowrap; 
+	display: flex; 
+	flex-direction:row;
+	position:fixed;
+	top:0;
+	left: 0;  
+	width: 100%; 
+	height:40px;
+}
+
+.headTitle {
+	margin-top: 6px ;
+	display: inline-block;
+	margin-left:30px; 
+	font-size: 14px;
+}
+
+.on{ color: #da7c0c;  
+    border-bottom: 5rpx solid #da7c0c;} 
+
+.lotteryArea {
+	background-color: #ffffff;
+	margin-top: 50rpx;
+	margin-left: 14rpx;
+	margin-right: 14rpx;
+	border-radius: 4px;
+}
+
+.lotteryArea .big {
+	position:relative;
+	width: 100%;
+	height: 180px;	
+	display: block;
+	margin-left:5px;
+	margin-right:5px;
+	margin-bottom: 5px;
+ }
+ .lotteryArea .big .mark {
+	color: yellow;
+	font-size: 20px;
+	position:absolute;
+	top:145px;
+	left:10px; 
+}
+
+ .lotteryArea .big .bigImage {
+	width: 100%;
+	margin-top: 5px;
+	height: 170px;
+	margin-bottom: 5px;
+}
+
+.lotteryArea .big .title {
+	color: #333333;
+	width: 100%;
+	text-align: left;
+	display: block;
+	font-size: 12px;
+}
+
+.lotteryArea .big .TV {
+	position:absolute;
+	top:140px;
+	right:10px;
+	height:30px; 
+	width:40px;
+	
+}		  	 
+
+.lotteryArea .small {
+	display:flex;
+	flex-direction:row;
+	margin-top:15px;
+	margin-bottom:10px;
+
+}
+
+.lotteryArea .small .smallCell {
+	display:flex;
+    position:relative;
+	margin-top:5px;
+	margin-left:5px;
+	width: 48%;
+	margin-bottom: 5px;
+}
+
+ .lotteryArea .small .smallImage {
+	width: 100%;
+	margin-top: 5px;
+	height: 120px;
+	margin-bottom: 5px;
+}
+.lotteryArea .small .smallMark {
+	color: yellow;
+	font-size: 20px;
+	position:absolute;
+	top:95px;
+	left:10px; 
+}
+
+.lotteryArea .small .smallTV {
+	position:absolute; 
+	top:90px;
+	right:10px;
+	height:30px; 
+	width:40px;
+}	
+
+.lotteryArea .small .smallTitle {
+	position:absolute; 
+	top:130px;
+	right:0px;
+	color: #333333;
+	width: 100%;
+	text-align: left;
+	font-size: 12px;
+}
+ 
